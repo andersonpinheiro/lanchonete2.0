@@ -1,0 +1,121 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periquito Lanches</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    </head>
+    <body>
+
+    <header class="header">
+        <div class="header__logo-group">
+        <img src="periquito.png" alt="Logotipo Periquito Lanches" class="header__logo-img">
+        <h1 class="header__title">Periquito Lanches</h1>
+        </div>
+        <p class="header__contact">Peça já o seu lanche! Contato: 3585-4716 / 99778-7201</p>
+    </header>
+
+    <div id="cart-icon" class="cart-icon">🛒 <span id="cart-counter">0</span></div>
+
+    <main class="main-content">
+        
+        <section id="lanches" class="menu-section">
+        <h2>Lanches</h2>
+        <div class="menu-grid">
+            <article class="menu-item"><h3 class="menu-item__title">Cachorro Quente Simples</h3><p>Salsicha, alface, tomate</p><p class="menu-item__price">R$ 7,00</p><button class="btn js-add-to-cart" data-nome="Cachorro Quente Simples" data-preco="7">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Cachorro Quente Especial</h3><p>2 Salsichas, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 10,00</p><button class="btn js-add-to-cart" data-nome="Cachorro Quente Especial" data-preco="10">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Cachorro Quente Especial 2</h3><p>2 Salsichas, alface, tomate, milho, batata palha, bacon</p><p class="menu-item__price">R$ 13,00</p><button class="btn js-add-to-cart" data-nome="Cachorro Quente Especial 2" data-preco="13">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Burguer</h3><p>Hambúrguer, presunto, muçarela</p><p class="menu-item__price">R$ 9,50</p><button class="btn js-add-to-cart" data-nome="X-Burguer" data-preco="9.5">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Misto Quente</h3><p>Presunto, muçarela</p><p class="menu-item__price">R$ 13,00</p><button class="btn js-add-to-cart" data-nome="Misto Quente" data-preco="13">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Misto Tudo</h3><p>Hambúrguer, bacon, ovo, presunto, muçarela, batata palha</p><p class="menu-item__price">R$ 17,00</p><button class="btn js-add-to-cart" data-nome="Misto Tudo" data-preco="17">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Bauru</h3><p>Tomate, presunto, muçarela</p><p class="menu-item__price">R$ 11,00</p><button class="btn js-add-to-cart" data-nome="Bauru" data-preco="11">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Vegetariano</h3><p>Ovo, muçarela, alface, tomate</p><p class="menu-item__price">R$ 11,00</p><button class="btn js-add-to-cart" data-nome="X-Vegetariano" data-preco="11">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Rubão</h3><p>Contrafilé, lombo, frango, hambúrguer, bacon, ovo, catupiry, azeitona, presunto, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 28,00</p><button class="btn js-add-to-cart" data-nome="X-Rubão" data-preco="28">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Salada</h3><p>Hambúrguer, presunto, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 12,00</p><button class="btn js-add-to-cart" data-nome="X-Salada" data-preco="12">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Catupiry</h3><p>Hambúrguer, catupiry, presunto, muçarela, alface, milho, batata palha</p><p class="menu-item__price">R$ 14,00</p><button class="btn js-add-to-cart" data-nome="X-Catupiry" data-preco="14">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Bacon</h3><p>Hambúrguer, bacon, presunto, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 15,00</p><button class="btn js-add-to-cart" data-nome="X-Bacon" data-preco="15">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Egg / Americano</h3><p>Hambúrguer, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 13,00</p><button class="btn js-add-to-cart" data-nome="X-Egg / Americano" data-preco="13">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Azeitonado</h3><p>Hambúrguer, azeitona, presunto, muçarela, alface, milho, batata palha</p><p class="menu-item__price">R$ 15,00</p><button class="btn js-add-to-cart" data-nome="X-Azeitonado" data-preco="15">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Tudo</h3><p>Hambúrguer, salsicha, bacon, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 17,00</p><button class="btn js-add-to-cart" data-nome="X-Tudo" data-preco="17">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Duplo</h3><p>2 Hambúrgueres, bacon, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 19,00</p><button class="btn js-add-to-cart" data-nome="X-Duplo" data-preco="19">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Especial</h3><p>Lombo, contrafilé, frango, bacon, ovo, presunto, muçarela, alface, tomate, milho</p><p class="menu-item__price">R$ 25,00</p><button class="btn js-add-to-cart" data-nome="X-Especial" data-preco="25">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Churrasco</h3><p>Contrafilé, muçarela, alface, tomate</p><p class="menu-item__price">R$ 23,00</p><button class="btn js-add-to-cart" data-nome="Churrasco" data-preco="23">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Churrasco Tudo</h3><p>Contrafilé, bacon, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 25,00</p><button class="btn js-add-to-cart" data-nome="Churrasco Tudo" data-preco="25">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Lombo</h3><p>Lombo, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 18,00</p><button class="btn js-add-to-cart" data-nome="X-Lombo" data-preco="18">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Lombo Tudo</h3><p>Lombo, bacon, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 20,00</p><button class="btn js-add-to-cart" data-nome="X-Lombo Tudo" data-preco="20">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Bolinha</h3><p>Hambúrguer, frango, bacon, ovo, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 19,00</p><button class="btn js-add-to-cart" data-nome="X-Bolinha" data-preco="19">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Frango</h3><p>Frango, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 17,00</p><button class="btn js-add-to-cart" data-nome="X-Frango" data-preco="17">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Frango Tudo</h3><p>Frango, bacon, ovo, presunto, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 20,00</p><button class="btn js-add-to-cart" data-nome="X-Frango Tudo" data-preco="20">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Salada Calabresa</h3><p>Hambúrguer, calabresa, cebola, presunto, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 15,00</p><button class="btn js-add-to-cart" data-nome="X-Salada Calabresa" data-preco="15">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Calabresa</h3><p>Calabresa, muçarela, alface, tomate, milho, batata palha</p><p class="menu-item__price">R$ 13,00</p><button class="btn js-add-to-cart" data-nome="X-Calabresa" data-preco="13">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Calabresa Tudo</h3><p>Hambúrguer, calabresa, bacon, ovo, cebola, presunto, muçarela, alface, tomate, batata palha</p><p class="menu-item__price">R$ 17,00</p><button class="btn js-add-to-cart" data-nome="X-Calabresa Tudo" data-preco="17">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">X-Frango com Calabresa</h3><p>Frango, calabresa, bacon, azeitona, cebola, alface, tomate, milho</p><p class="menu-item__price">R$ 22,00</p><button class="btn js-add-to-cart" data-nome="X-Frango com Calabresa" data-preco="22">Adicionar</button></article>
+        </div>
+        </section>
+
+        <section id="bebidas" class="menu-section">
+        <h2>Bebidas</h2>
+        <div class="menu-grid">
+            <article class="menu-item"><h3 class="menu-item__title">Coca-Cola (2 litros)</h3><p class="menu-item__price">R$ 12,00</p><button class="btn js-add-to-cart" data-nome="Coca-Cola 2L" data-preco="12">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Fanta ou Guaraná (2 litros)</h3><p class="menu-item__price">R$ 10,00</p><button class="btn js-add-to-cart" data-nome="Fanta / Guaraná 2L" data-preco="10">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Refrigerante Lata</h3><p class="menu-item__price">R$ 5,00</p><button class="btn js-add-to-cart" data-nome="Refrigerante Lata" data-preco="5">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Cerveja Lata</h3><p class="menu-item__price">R$ 5,00</p><button class="btn js-add-to-cart" data-nome="Cerveja Lata" data-preco="5">Adicionar</button></article>
+            <article class="menu-item"><h3 class="menu-item__title">Suco Nativa</h3><p class="menu-item__price">R$ 3,00</p><button class="btn js-add-to-cart" data-nome="Suco Nativa" data-preco="3">Adicionar</button></article>
+        </div>
+        </section>
+
+        <section id="order-summary-section" class="order-summary">
+        <h2>🧾 Finalizar Pedido</h2>
+        
+        <div id="order-items" class="order-summary__items">
+            <p>Seu carrinho está vazio.</p>
+        </div>
+        
+        <div class="order-summary__total">
+            <strong>Total:</strong> <span id="total-value">R$ 0,00</span>
+        </div>
+        
+        <div class="payment-options">
+            <h3>💳 Forma de Pagamento</h3>
+            <div class="payment-options__choices">
+            <label><input type="radio" name="pagamento" value="Dinheiro" checked> Dinheiro</label>
+            <label><input type="radio" name="pagamento" value="Pix"> Pix</label>
+            <label><input type="radio" name="pagamento" value="Cartão"> Cartão</label>
+            </div>
+        </div>
+        
+        <div id="troco-secao" class="payment-details hidden">
+            <label for="troco-para">Precisa de troco para quanto?</label>
+            <input type="number" id="troco-para" placeholder="Ex: 50">
+        </div>
+
+        <div id="pix-secao" class="payment-details hidden">
+            <p><strong>Escaneie para pagar com PIX:</strong></p>
+            <div id="qrcode" class="qrcode-container"></div>
+            <label for="pix-key-copy">Ou use o Copia e Cola:</label>
+            <div class="copy-paste-container">
+                <input type="text" id="pix-key-copy" readonly>
+                <button type="button" id="copy-pix-btn">Copiar</button>
+            </div>
+            <small>Após pagar, por favor, envie o comprovante no WhatsApp.</small>
+        </div>
+
+        <div class="observations">
+            <h3>📝 Observações</h3>
+            <textarea id="obs" placeholder="Ex: sem cebola, ponto da carne..."></textarea>
+        </div>
+        
+        <button id="btn-send-order" class="btn btn--primary btn--large">📲 Enviar Pedido</button>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <p>🍔 Periquito Lanches - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
