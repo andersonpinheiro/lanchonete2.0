@@ -24,7 +24,7 @@
     // Configuração
     // ========================
     // !!! IMPORTANTE: SUBSTITUA PELA SUA CHAVE PIX REAL !!!
-    const SUA_CHAVE_PIX = "seu.email@provedor.com"; // Pode ser CPF, CNPJ, e-mail, telefone ou chave aleatória
+    const SUA_CHAVE_PIX = "anderson.8691@gmail.com"; // Pode ser CPF, CNPJ, e-mail, telefone ou chave aleatória
 
     // ========================
     // Estado da Aplicação (Carrinho)
